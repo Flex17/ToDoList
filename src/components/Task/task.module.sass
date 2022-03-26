@@ -1,0 +1,76 @@
+.wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: #f4f6f7
+    padding: 12px 25px
+    border-radius: 0.25rem
+    margin-bottom: 10px
+
+.item
+    display: flex
+    text-align: center
+
+.input:checked,
+.input:not(:checked)
+    position: absolute
+    left: -9999px
+
+.input:checked + label,
+.input:not(:checked) + label
+    display: inline-block
+    position: relative
+    padding-left: 28px
+    line-height: 20px
+    cursor: pointer
+    bottom: 1px
+
+.input:checked + label:before,
+.input:not(:checked) + label:before
+    content: ""
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 18px
+    height: 18px
+    border: 1px solid #dddddd
+    background-color: #ffffff
+    border-radius: 2px
+
+.input:checked + label:after,
+.input:not(:checked) + label:after
+    content: ""
+    position: absolute
+    transition: all 0.2s ease
+    left: 3px
+    top: 4px
+    width: 10px
+    height: 5px
+    border-radius: 1px
+    border-left: 4px solid #1266f1
+    border-bottom: 4px solid #1266f1
+    transform: rotate(-45deg)
+
+.input:not(:checked) + label:after
+    opacity: 0
+
+.input:checked + label:after
+    opacity: 1
+
+.text
+    font-size: 18px
+    margin-left: 5px
+
+.completed
+    text-decoration: line-through
+    font-size: 18px
+    margin-left: 5px
+
+.trash
+    display: block
+    margin-top: 3px
+    cursor: pointer
+
+.content
+    display: flex
+    align-items: center
