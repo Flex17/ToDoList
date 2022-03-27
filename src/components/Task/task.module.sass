@@ -2,7 +2,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    background-color: #f4f6f7
+    background-color: var(--task-bg-color)
     padding: 12px 25px
     border-radius: 0.25rem
     margin-bottom: 10px
@@ -33,8 +33,8 @@
     top: 0px
     width: 18px
     height: 18px
-    border: 1px solid #dddddd
-    background-color: #ffffff
+    border: 2px solid var(--checkbox-disabled-border-color)
+    background-color: var(--checkbox-disabled-bg-color)
     border-radius: 2px
 
 .input:checked + label:after,
@@ -42,13 +42,13 @@
     content: ""
     position: absolute
     transition: all 0.2s ease
-    left: 3px
-    top: 4px
+    left: 4px
+    top: 5px
     width: 10px
     height: 5px
     border-radius: 1px
-    border-left: 4px solid #1266f1
-    border-bottom: 4px solid #1266f1
+    border-left: 4px solid var(--checkbox-active-border-color)
+    border-bottom: 4px solid var(--checkbox-active-border-color)
     transform: rotate(-45deg)
 
 .input:not(:checked) + label:after
@@ -60,11 +60,13 @@
 .text
     font-size: 18px
     margin-left: 5px
+    color: var(--task-text-color)
 
 .completed
     text-decoration: line-through
     font-size: 18px
     margin-left: 5px
+    color: var(--task-text-color)
 
 .trash
     display: block

@@ -3,7 +3,7 @@ import css from './tasks.module.sass'
 
 const Tasks = ({ tasks, category }) => {
 
-    let elements
+    let elements;
 
     switch (category) {
         case 'all':

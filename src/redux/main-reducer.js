@@ -1,7 +1,7 @@
 const ADD_TASK = 'ADD-TASK';
 const COMPLETE_TASK = 'COMPLETE-TASK';
 const CHANGE_CURRENT_TEXT = 'CHANGE-CURRENT-TEXT';
-const DELETE_TASK = 'DELETE-TASK'
+const DELETE_TASK = 'DELETE-TASK';
 
 const initialState = {
     tasks: [

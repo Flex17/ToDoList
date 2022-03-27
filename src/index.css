@@ -1,0 +1,116 @@
+@import-normalize;
+
+:root[data-theme="light"]{
+    --body-bg-color: #fff;
+
+    --title-color: #39c0ed;
+
+    --btn-color: #39c0ed;
+    --btn-text-color: #fff;
+
+    --input-text-color: #4f4f4f;
+    --input-bg-color: #fff;
+    --input-border-color: #bdbdbd;
+    --input-focused-color: #0d6efd;
+    --input-placeholder-color: #000;
+    --input-focused-placeholder-color: #0d6efd;
+    --input-focused-placeholder-bg-color: white;
+
+    --category-active-text-color: #1266f1;
+    --category-disabled-text-color: #64646499;
+    --category-border-color: #1266f1;
+    --category-actve-bg-color: #f0f0f0;
+
+    --task-bg-color: #f4f6f7;
+    --task-text-color: #000;
+    --checkbox-disabled-border-color: #dddddd;
+    --checkbox-active-border-color: #1266f1;
+    --checkbox-disabled-bg-color: #fff;
+
+    --theme-switcher-color: #000
+}
+
+:root[data-theme="dark"]{
+    --body-bg-color: #474A51;
+
+    --title-color: #39c0ed;
+
+    --btn-color: #39c0ed;
+    --btn-text-color: #fff;
+
+    --input-text-color: #fff;
+    --input-bg-color: #c0c0c085;
+    --input-border-color: none;
+    --input-focused-color: #fff;
+    --input-placeholder-color: #fff;
+    --input-focused-placeholder-color: black;
+    --input-focused-placeholder-bg-color: #fff;
+
+    --category-active-text-color: #fff;
+    --category-disabled-text-color: #92929299;
+    --category-border-color: #fff;
+    --category-actve-bg-color: #696969;
+
+    --task-bg-color: #c0c0c085;
+    --task-text-color: #000;
+    --checkbox-disabled-border-color: #dddddd;
+    --checkbox-active-border-color: #39c0ed;
+    --checkbox-disabled-bg-color: #fff;
+
+    --theme-switcher-color: #fff
+}
+
+*{
+    box-sizing: border-box
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-bg-color);
+    transition: background-color 200ms linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
