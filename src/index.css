@@ -5,7 +5,8 @@
 
     --title-color: #39c0ed;
 
-    --btn-color: #39c0ed;
+   --btn-active-color: #39c0ed;
+    --btn-disabled-color: #39c0ed73;
     --btn-text-color: #fff;
 
     --input-text-color: #4f4f4f;
@@ -35,7 +36,8 @@
 
     --title-color: #39c0ed;
 
-    --btn-color: #39c0ed;
+    --btn-active-color: #39c0ed;
+    --btn-disabled-color: #39c0ed73;
     --btn-text-color: #fff;
 
     --input-text-color: #fff;

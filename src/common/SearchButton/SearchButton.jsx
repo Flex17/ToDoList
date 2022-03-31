@@ -1,10 +1,10 @@
 import css from './searchButton.module.sass'
 
-const SearchButton = ({ btn, addTask, ...props }) => {
+const SearchButton = ({ btn, addTask, isActive, ...props }) => {
     return (
         <button
-            className={css.btn}
-            onClick={() => { addTask() }}
+            className={isActive ? css.btnActive : css.btnDisabled}
+            onClick={() => { isActive ? addTask() : console.log() }}
         >
             {btn}
         </button>
